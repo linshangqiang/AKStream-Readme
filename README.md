@@ -38,3 +38,12 @@
 
 ### 是否自动推流
 - /SipGate/SetAutoPushStreamState设置Sip网关自动推流状态
+![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img7.png)
+
+True：开启已激活的摄像头自动推流  false :关闭已激活的摄像头自动推流
+- /SipGate/GetAutoPushStreamState 获取Sip网关自动推流状态
+参数：无    返回：true 自动推流  false 不自动推流
+- 若状态为false,可调用接口 /SipGate/LiveVideo 请求实时视频
+![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img8.png)
+
+
