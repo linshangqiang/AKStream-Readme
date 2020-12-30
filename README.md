@@ -45,10 +45,10 @@
 - /SipGate/SetAutoPushStreamState设置Sip网关自动推流状态
 ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img7.png)
 
-True：开启已激活的摄像头自动推流  false :关闭已激活的摄像头自动推流
+  True：开启已激活的摄像头自动推流  false :关闭已激活的摄像头自动推流
 - /SipGate/GetAutoPushStreamState 获取Sip网关自动推流状态
   
-参数：无    返回：true 自动推流  false 不自动推流
+  参数：无    返回：true 自动推流  false 不自动推流
 - 若状态为false,可调用接口 /SipGate/LiveVideo 请求实时视频
 ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img8.png)
 ### MediaServer 信息查询与控制
@@ -58,6 +58,7 @@ True：开启已激活的摄像头自动推流  false :关闭已激活的摄像�
 - /System/GetMediaServerList  获取流媒体服务器列表
 
   参数：无  返回值如图：
+  
 ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img9.png)
 - /MediaServer/CheckMediaServerRunning 检查流媒体服务是否正在运行
   参数：流媒体服务器ID （例如上面那个接口：6rt5K4YtkuiNv0FM）
@@ -79,6 +80,7 @@ True：开启已激活的摄像头自动推流  false :关闭已激活的摄像�
 - /MediaServer/AddFFmpegProxy 启动一个ffmpeg代理流
   ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img10.png)
 - /MediaServer/CloseStreams 关闭一个流
+
   ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img11.png)
 - /MediaServer/GetStreamList 获取流列表
   
@@ -124,6 +126,7 @@ True：开启已激活的摄像头自动推流  false :关闭已激活的摄像�
 ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img21.png)
 ### ZLMediaKit录制
 - /MediaServer/StartRecord启动流的录制
+
 ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img22.png)
 
 Vhost、app、stream  请查看zlm的wiki 《播放URL规则》篇,链接如下：
@@ -141,10 +144,13 @@ https://github.com/xia-chu/ZLMediaKit/wiki/%E6%92%AD%E6%94%BEurl%E8%A7%84%E5%88%
   调用成功StreamNode日志：
 ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img24.png)
 - /DvrPlan/GetDvrPlan 获取录制计划
+
   参数请求:
+  
   ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img25.png)
   
   Responses(回复)：
+  
    ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img26.png)
 - /DvrPlan/OnOrOffDvrPlanById 启用或停用一个录制计划
   ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img27.png)
