@@ -57,9 +57,39 @@ True：开启已激活的摄像头自动推流  false :关闭已激活的摄像�
 - /MediaServer/CheckMediaServerRunning 检查流媒体服务是否正在运行
   参数：流媒体服务器ID （例如上面那个接口：6rt5K4YtkuiNv0FM）
 
-返回：true 正在运行  false 不在运行
+  返回：true 正在运行  false 不在运行
 - /System/GetMediaServerInstance 获取一个流媒体服务的实例 
 
-参数：流媒体服务器ID  
+  参数：流媒体服务器ID  
   - /MediaServer/StopMediaServer 关闭流媒体服务
+  
   参数：流媒体服务器ID
+  - /MediaServer/StartMediaServer 启动流媒体服务
+  
+  参数：流媒体服务器ID
+- /MediaServer/RestartMediaServer 重启流媒体服务
+
+  参数：流媒体服务器ID  
+  ### 视频流
+- /MediaServer/AddFFmpegProxy 启动一个ffmpeg代理流
+  ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img10.png)
+- /MediaServer/CloseStreams 关闭一个流
+  ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img11.png)
+- /MediaServer/GetStreamList 获取流列表
+  
+  参数：流媒体ID  获取到MediaServer中存在的所有流，并显示信息
+- /MediaServer/OpenRtpPort  打开某个rtp端口
+   ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img12.png)
+   
+  打开端口成功后，要立即往 这个端口推流，否则将会超时回收。
+- /MediaServer/CloseRtpPort 关闭某个rtp端口
+   ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img12.png)
+   
+  关闭流媒体服务器上stream_Id为xxxx的流所在推的端口
+- /MediaServer/GetRtpPortList 获取流媒体已经开放的rtp端口列表
+   
+  参数：流媒体服务器ID 
+- /System/GetGlobleSystemInfo 获取全局的系统信息
+
+  参数：无
+### 摄像头
