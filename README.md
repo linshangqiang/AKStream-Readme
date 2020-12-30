@@ -33,4 +33,8 @@
 
 3.**调用：/MediaServer/ActivateSipCamera 激活sip网关自动添加的摄像头**,填入参数
 ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img6.png)
+
 除1,2,3,4根据接口的值固定以外，其他的参数不固定，可暂时跟着我的填写。最好规范填写，这样数据库方便管理。Acticated为false时，激活摄像头不会自动推流
+
+### 是否自动推流
+- /SipGate/SetAutoPushStreamState设置Sip网关自动推流状态
