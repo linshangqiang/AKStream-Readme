@@ -42,8 +42,16 @@
 
 True：开启已激活的摄像头自动推流  false :关闭已激活的摄像头自动推流
 - /SipGate/GetAutoPushStreamState 获取Sip网关自动推流状态
-  -参数：无    返回：true 自动推流  false 不自动推流
+  
+参数：无    返回：true 自动推流  false 不自动推流
 - 若状态为false,可调用接口 /SipGate/LiveVideo 请求实时视频
 ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img8.png)
+### MediaServer 信息查询与控制
+- /MediaServer/GetConfig 获取流媒体配置信息
+
+传入参数：流媒体ID   返回：流媒体的配置
+- /System/GetMediaServerList  获取流媒体服务器列表
+
+参数：无  返回值如图：
 
 
