@@ -16,5 +16,5 @@
 ![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img2.png)
 
 ### 如何往一个ZLMediaKit上推流
-摄像头接入成功之后，需要在streamCtrl上激活之后才能推流，需要在调用StreamCtrl接口文档激活摄像头，swagger文档找**到/MediaServer/ActivateSipCamera  激活sip网关自动添加的摄像头这个接口
+摄像头接入成功之后，需要在streamCtrl上激活之后才能推流，需要在调用StreamCtrl接口文档激活摄像头，swagger文档找**到/MediaServer/ActivateSipCamera  激活sip网关自动添加的摄像头这个接口**
 
