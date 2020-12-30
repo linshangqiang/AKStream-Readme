@@ -49,9 +49,17 @@ True：开启已激活的摄像头自动推流  false :关闭已激活的摄像�
 ### MediaServer 信息查询与控制
 - /MediaServer/GetConfig 获取流媒体配置信息
 
-传入参数：流媒体ID   返回：流媒体的配置
+  传入参数：流媒体ID   返回：流媒体的配置
 - /System/GetMediaServerList  获取流媒体服务器列表
 
-参数：无  返回值如图：
+  参数：无  返回值如图：
+![image](https://github.com/linshangqiang/AKStream-Readme/blob/main/img9.png)
+- /MediaServer/CheckMediaServerRunning 检查流媒体服务是否正在运行
+  参数：流媒体服务器ID （例如上面那个接口：6rt5K4YtkuiNv0FM）
 
+返回：true 正在运行  false 不在运行
+- /System/GetMediaServerInstance 获取一个流媒体服务的实例 
 
+参数：流媒体服务器ID  
+  - /MediaServer/StopMediaServer 关闭流媒体服务
+  参数：流媒体服务器ID
