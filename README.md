@@ -1,8 +1,3 @@
-以下是我所用过的一些接口，希望对你有所帮助，图片需要翻墙才能看到
-
-下载地址：https://github.com/getlantern/lantern
-
-根据自己的系统装，装完之后运行软件再打开此链接，就能看到图片了
 
 # AKStream接口文档
 运行StreamCtrl(管理程序)和MediaService（zlm）
